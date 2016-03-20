@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:orientation="horizontal"
+    android:layout_height="fill_parent">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:background="@color/colorPrimary"
+            android:layout_height="fill_parent"
+            android:layout_weight="1.5">
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:text="First"
+                android:layout_gravity="center_horizontal"
+                android:textColorHighlight="#ffffffff"
+                android:textSize="20sp" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/imageView"
+                android:background="@drawable/nuclear_station"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentStart="true" />
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:background="@drawable/clouds"
+                android:layout_height="fill_parent"
+                android:layout_weight="1">
+                <ImageButton
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:id="@+id/circleButton"
+                    android:background="@drawable/circle_button"
+                    android:layout_above="@+id/rhombusButton"
+                    android:layout_alignStart="@+id/rhombusButton"
+                    android:onClick="clickCircle" />
+
+                <ImageButton
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:id="@+id/squareButton"
+                    android:background="@drawable/square_button"
+                    android:layout_below="@+id/triangleButton"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginEnd="40dp"
+                    android:onClick="clickSquare" />
+
+                <ImageButton
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:id="@+id/triangleButton"
+                    android:background="@drawable/triangle_button"
+                    android:layout_alignTop="@+id/circleButton"
+                    android:layout_alignStart="@+id/squareButton"
+                    android:onClick="clickTriangle" />
+
+                <ImageButton
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:id="@+id/rhombusButton"
+                    android:background="@drawable/rhombus_button"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginStart="40dp"
+                    android:layout_marginBottom="40dp"
+                    android:onClick="clickRhombus" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:background="@color/colorPrimary"
+                android:layout_height="fill_parent"
+                android:layout_weight="6"
+                android:id="@+id/mylayout">
+                <TextView
+                    android:id="@+id/thirdText"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:text="Third"
+                    android:layout_gravity="center_horizontal"
+                    android:textColorHighlight="#ffffffff"
+                    android:textSize="20sp" />
+
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="fill_parent"
+                    android:id="@+id/imageView2"
+                    android:background="@color/colorAccent"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginLeft="20dp"/>
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:id="@+id/current"
+                    android:layout_marginBottom="10dp"
+                    android:background="@drawable/circle_button"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentEnd="true" />
+
+            </RelativeLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:background="@color/colorPrimaryDark"
+        android:layout_height="fill_parent"
+        android:layout_weight="10"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="fill_parent"
+            android:layout_height="80dp"
+            android:id="@+id/iv6" />
+        <ImageView
+            android:layout_width="fill_parent"
+            android:layout_height="80dp"
+            android:id="@+id/iv5" />
+        <ImageView
+            android:layout_width="fill_parent"
+            android:layout_height="80dp"
+            android:id="@+id/iv4" />
+        <ImageView
+            android:layout_width="fill_parent"
+            android:layout_height="80dp"
+            android:id="@+id/iv3" />
+        <ImageView
+            android:layout_width="fill_parent"
+            android:layout_height="80dp"
+            android:id="@+id/iv2" />
+        <ImageView
+            android:layout_width="fill_parent"
+            android:layout_height="80dp"
+            android:id="@+id/iv1" />
+        <ImageView
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:id="@+id/iv0" />
+    </LinearLayout>
+
+
+</LinearLayout>
